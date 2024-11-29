@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Projeto Github Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto, chamado GitHub Explorer, é uma aplicação desenvolvida para facilitar a busca por usuários no GitHub. Ele exibe informações detalhadas sobre os usuários e seus repositórios, permitindo acessá-los de maneira rápida e eficiente.
 
-## Available Scripts
+## Pré-requisitos
 
-In the project directory, you can run:
+1. Node.js
+2. npm ou yarn
+3. Terminal
 
-### `npm start`
+## Rodar o projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. npm install 
+2. npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A aplicação normalmente é iniciada na porta 3000. Para acessá-la, 
+basta visitar o endereço http://localhost:3000 no seu navegador.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila o aplicativo para produção na pasta build. Ele empacota corretamente o React 
+no modo de produção e otimiza a compilação para obter o melhor desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Aplicação 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Acesse a aplicação aqui: [Link da aplicacao](https://link-da-demo.com)
 
-### `npm run eject`
+## Demonstração
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Tela Home Desktop](./public//assets/home-desktop.png)
+![Tela Home Mobile](./public//assets/home-mobile.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Tela UserDetails Desktop](./public/assets//userDetails-desktop.png)
+![Tela UserDetails Mobile](./public//assets/userDetails-mobile.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Tela RepoDetials](./public//assets/repoDetails.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Apis consumidas no projeto
 
-## Learn More
+1. Detalhes de um usuário: https://api.github.com/users/{username}
+2. Repositórios de um usuário: https://api.github.com/users/{username}/repos
+3. Detalhes de um repositório: https://api.github.com/repos/{full_name}
+ 
+ ## Tecnologias Utilizadas no Projet
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ O projeto foi desenvolvido utilizando um conjunto de tecnologias modernas e ferramentas que garantem desempenho,
+ escalabilidade e uma ótima experiência para o usuário. As principais tecnologias utilizadas foram:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 1. React.js
+ 2. Css 
+ 3. Axios
+ 4. React Router Dom
