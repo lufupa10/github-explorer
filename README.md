@@ -23,7 +23,7 @@ no modo de produção e otimiza a compilação para obter o melhor desempenho.
 
 ## Aplicação 
 
-Acesse a aplicação aqui: [Link da aplicacao](https://link-da-demo.com)
+Acesse a aplicação aqui: [Link da aplicacao](https://github-explorer-one-omega.vercel.app)
 
 ## Demonstração
 
