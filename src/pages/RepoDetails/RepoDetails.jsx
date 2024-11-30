@@ -49,9 +49,14 @@ function RepoDetails() {
         Visite o repositório no GitHub
       </Button>
 
+      <Link to={`/`} className="back-link">
+        Voltar para pesquisa
+      </Link>
+      
       <Link to={`/user/${owner}`} className="back-link">
         Voltar aos repositórios
       </Link>
+
     </div>
   );
 }
