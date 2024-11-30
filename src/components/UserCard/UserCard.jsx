@@ -1,9 +1,9 @@
-import React from 'react';
-import './UserCard.css';
+import React from "react";
+import "./UserCard.css";
 
 const UserCard = ({ user }) => {
   if (!user) return null;
-  
+
   return (
     <div className="card">
       <img src={user.avatar_url} alt={user.login} className="card-avatar" />

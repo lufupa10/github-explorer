@@ -1,18 +1,17 @@
 .input {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s;
-  }
-  
-  .input:focus {
-    border-color: #007acc;
-  }
-  
-  .input::placeholder {
-    color: #aaa;
-  }
-  
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #007acc;
+}
+
+.input::placeholder {
+  color: #aaa;
+}

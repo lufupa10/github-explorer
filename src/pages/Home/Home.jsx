@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Button from '../../components/Button/Button';
-import Input from '../../components/Input/Input';
-import './Home.css';
+import { useState } from "react";
+import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import Button from "../../components/Button/Button";
+import Input from "../../components/Input/Input";
+import "./Home.css";
 
 function Home() {
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
   const handleSearch = () => {
@@ -16,14 +17,18 @@ function Home() {
 
   return (
     <div className="container home">
-      <h1>GitHub<span className='logo'>Explorer</span></h1>
+      <h1>
+        GitHub<span className="logo">Explorer</span>
+      </h1>
       <div className="form">
         <Input
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Digite o nome de usuário do GitHub"
         />
-        <Button onClick={handleSearch}>Buscar</Button>
+        <Button onClick={handleSearch} icon={FaSearch}>
+          Buscar
+        </Button>
       </div>
     </div>
   );

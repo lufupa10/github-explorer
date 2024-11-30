@@ -50,3 +50,4 @@ Acesse a aplicação aqui: [Link da aplicacao](https://github-explorer-one-omega
  2. Css 
  3. Axios
  4. React Router Dom
+ 5. React Icons

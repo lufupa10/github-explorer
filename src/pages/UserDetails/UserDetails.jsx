@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { FaStar } from "react-icons/fa";
 import api from "../../services/api";
 import Button from "../../components/Button/Button";
 import Spinner from "../../components/Spinner/Spinner";
 import UserCard from "../../components/UserCard/UserCard";
-
 import "./UserDetails.css";
 
 function UserDetails() {
@@ -68,7 +68,11 @@ function UserDetails() {
 
   return (
     <div className="container user-details">
-      <UserCard user={user} /> 
+      <UserCard user={user} />
+
+      <Link to={`/`} className="back-link">
+        Voltar para pesquisa
+      </Link>
 
       {repos.length && (
         <Button onClick={toggleSort}>
@@ -76,10 +80,6 @@ function UserDetails() {
           {sortOrder === "desc" ? "Maior para Menor" : "Menor para Maior"})
         </Button>
       )}
-
-      <Link to={`/`} className="back-link">
-        Voltar para pesquisa
-      </Link>
 
       {repos.length === 0 ? (
         <p className="no-repos-message">Este usuário não tem repositórios!</p>
@@ -89,8 +89,10 @@ function UserDetails() {
             <li key={repo.id} className="repo-item">
               <Link to={`/repo/${repo.owner.login}/${repo.name}`}>
                 {repo.name}
-              </Link>{" "}
-              - {repo.stargazers_count} ⭐
+              </Link>
+              <span>
+                {repo.stargazers_count} <FaStar size={20} color="#f1c40f" />
+              </span>
             </li>
           ))}
         </ul>

@@ -1,6 +1,12 @@
-import './Input.css';
+import "./Input.css";
 
-function Input({ value, onChange, placeholder, type = 'text', className = '' }) {
+function Input({
+  value,
+  onChange,
+  placeholder,
+  type = "text",
+  className = "",
+}) {
   return (
     <input
       className={`input ${className}`}
