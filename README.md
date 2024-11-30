@@ -41,7 +41,7 @@ Acesse a aplicação aqui: [Link da aplicacao](https://link-da-demo.com)
 2. Repositórios de um usuário: https://api.github.com/users/{username}/repos
 3. Detalhes de um repositório: https://api.github.com/repos/{full_name}
  
- ## Tecnologias Utilizadas no Projet
+ ## Tecnologias Utilizadas no Projeto
 
  O projeto foi desenvolvido utilizando um conjunto de tecnologias modernas e ferramentas que garantem desempenho,
  escalabilidade e uma ótima experiência para o usuário. As principais tecnologias utilizadas foram:
