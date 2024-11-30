@@ -53,3 +53,7 @@ ul li {
 .back-link:hover {
   text-decoration: underline;
 }
+
+.repo-url {
+  display: inline;
+}

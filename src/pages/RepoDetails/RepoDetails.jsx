@@ -4,6 +4,7 @@ import api from "../../services/api";
 import Spinner from "../../components/Spinner/Spinner";
 import { FaStar, FaCodeBranch, FaLaptopCode } from "react-icons/fa";
 import "./RepoDetails.css";
+import Button from "../../components/Button/Button";
 
 function RepoDetails() {
   const { owner, repo } = useParams();
@@ -17,6 +18,10 @@ function RepoDetails() {
 
     fetchRepoDetails();
   }, [owner, repo]);
+
+  function handleRepoDetails() {
+    window.open(repoDetails.html_url, "_blank");
+  }
 
   if (!repoDetails) {
     return <Spinner />;
@@ -39,14 +44,11 @@ function RepoDetails() {
           {repoDetails.language || "Não especificada"}
         </li>
       </ul>
-      <a
-        href={repoDetails.html_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="link"
-      >
+
+      <Button onClick={handleRepoDetails} className="repo-url">
         Visite o repositório no GitHub
-      </a>
+      </Button>
+
       <Link to={`/user/${owner}`} className="back-link">
         Voltar aos repositórios
       </Link>
