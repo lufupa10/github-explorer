@@ -23,7 +23,7 @@ no modo de produção e otimiza a compilação para obter o melhor desempenho.
 
 ## Aplicação 
 
-Acesse a aplicação aqui: [Link da aplicacao](https://github-explorer-one-omega.vercel.app)
+Acesse em produção aplicação aqui: [Link da aplicacao](https://github-explorer-one-omega.vercel.app)
 
 ## Demonstração
 
@@ -34,6 +34,7 @@ Acesse a aplicação aqui: [Link da aplicacao](https://github-explorer-one-omega
 ![Tela UserDetails Mobile](./public//assets/userDetails-mobile.png)
 
 ![Tela RepoDetials](./public//assets/repoDetails.png)
+![User not found](./public//assets/user-not-found.png)
 
 ## Apis consumidas no projeto
 
